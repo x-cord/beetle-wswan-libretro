@@ -103,6 +103,7 @@ struct retro_core_option_v2_definition option_defs_ar[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_AR },
          { "landscape", OPTION_VAL_LANDSCAPE_AR },
          { "portrait",  OPTION_VAL_PORTRAIT_AR },
@@ -338,6 +339,7 @@ struct retro_core_option_v2_definition option_defs_ast[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_AST },
          { "landscape", OPTION_VAL_LANDSCAPE_AST },
          { "portrait",  OPTION_VAL_PORTRAIT_AST },
@@ -573,6 +575,7 @@ struct retro_core_option_v2_definition option_defs_be[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_BE },
          { "landscape", OPTION_VAL_LANDSCAPE_BE },
          { "portrait",  OPTION_VAL_PORTRAIT_BE },
@@ -808,6 +811,7 @@ struct retro_core_option_v2_definition option_defs_ca[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_CA },
          { "landscape", OPTION_VAL_LANDSCAPE_CA },
          { "portrait",  OPTION_VAL_PORTRAIT_CA },
@@ -1043,6 +1047,7 @@ struct retro_core_option_v2_definition option_defs_chs[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_CHS },
          { "landscape", OPTION_VAL_LANDSCAPE_CHS },
          { "portrait",  OPTION_VAL_PORTRAIT_CHS },
@@ -1278,6 +1283,7 @@ struct retro_core_option_v2_definition option_defs_cht[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_CHT },
          { "landscape", OPTION_VAL_LANDSCAPE_CHT },
          { "portrait",  OPTION_VAL_PORTRAIT_CHT },
@@ -1513,6 +1519,7 @@ struct retro_core_option_v2_definition option_defs_cs[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_CS },
          { "landscape", OPTION_VAL_LANDSCAPE_CS },
          { "portrait",  OPTION_VAL_PORTRAIT_CS },
@@ -1748,6 +1755,7 @@ struct retro_core_option_v2_definition option_defs_cy[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_CY },
          { "landscape", OPTION_VAL_LANDSCAPE_CY },
          { "portrait",  OPTION_VAL_PORTRAIT_CY },
@@ -1983,6 +1991,7 @@ struct retro_core_option_v2_definition option_defs_da[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_DA },
          { "landscape", OPTION_VAL_LANDSCAPE_DA },
          { "portrait",  OPTION_VAL_PORTRAIT_DA },
@@ -2218,6 +2227,7 @@ struct retro_core_option_v2_definition option_defs_de[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_DE },
          { "landscape", OPTION_VAL_LANDSCAPE_DE },
          { "portrait",  OPTION_VAL_PORTRAIT_DE },
@@ -2453,6 +2463,7 @@ struct retro_core_option_v2_definition option_defs_el[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_EL },
          { "landscape", OPTION_VAL_LANDSCAPE_EL },
          { "portrait",  OPTION_VAL_PORTRAIT_EL },
@@ -2688,6 +2699,7 @@ struct retro_core_option_v2_definition option_defs_en[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_EN },
          { "landscape", OPTION_VAL_LANDSCAPE_EN },
          { "portrait",  OPTION_VAL_PORTRAIT_EN },
@@ -2923,6 +2935,7 @@ struct retro_core_option_v2_definition option_defs_eo[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_EO },
          { "landscape", OPTION_VAL_LANDSCAPE_EO },
          { "portrait",  OPTION_VAL_PORTRAIT_EO },
@@ -3158,6 +3171,7 @@ struct retro_core_option_v2_definition option_defs_es[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_ES },
          { "landscape", OPTION_VAL_LANDSCAPE_ES },
          { "portrait",  OPTION_VAL_PORTRAIT_ES },
@@ -3393,6 +3407,7 @@ struct retro_core_option_v2_definition option_defs_fa[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_FA },
          { "landscape", OPTION_VAL_LANDSCAPE_FA },
          { "portrait",  OPTION_VAL_PORTRAIT_FA },
@@ -3628,6 +3643,7 @@ struct retro_core_option_v2_definition option_defs_fi[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_FI },
          { "landscape", OPTION_VAL_LANDSCAPE_FI },
          { "portrait",  OPTION_VAL_PORTRAIT_FI },
@@ -3863,6 +3879,7 @@ struct retro_core_option_v2_definition option_defs_fr[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_FR },
          { "landscape", OPTION_VAL_LANDSCAPE_FR },
          { "portrait",  OPTION_VAL_PORTRAIT_FR },
@@ -4098,6 +4115,7 @@ struct retro_core_option_v2_definition option_defs_gl[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_GL },
          { "landscape", OPTION_VAL_LANDSCAPE_GL },
          { "portrait",  OPTION_VAL_PORTRAIT_GL },
@@ -4333,6 +4351,7 @@ struct retro_core_option_v2_definition option_defs_he[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_HE },
          { "landscape", OPTION_VAL_LANDSCAPE_HE },
          { "portrait",  OPTION_VAL_PORTRAIT_HE },
@@ -4568,6 +4587,7 @@ struct retro_core_option_v2_definition option_defs_hr[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_HR },
          { "landscape", OPTION_VAL_LANDSCAPE_HR },
          { "portrait",  OPTION_VAL_PORTRAIT_HR },
@@ -4803,6 +4823,7 @@ struct retro_core_option_v2_definition option_defs_hu[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_HU },
          { "landscape", OPTION_VAL_LANDSCAPE_HU },
          { "portrait",  OPTION_VAL_PORTRAIT_HU },
@@ -5038,6 +5059,7 @@ struct retro_core_option_v2_definition option_defs_id[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_ID },
          { "landscape", OPTION_VAL_LANDSCAPE_ID },
          { "portrait",  OPTION_VAL_PORTRAIT_ID },
@@ -5273,6 +5295,7 @@ struct retro_core_option_v2_definition option_defs_it[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_IT },
          { "landscape", OPTION_VAL_LANDSCAPE_IT },
          { "portrait",  OPTION_VAL_PORTRAIT_IT },
@@ -5508,6 +5531,7 @@ struct retro_core_option_v2_definition option_defs_ja[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_JA },
          { "landscape", OPTION_VAL_LANDSCAPE_JA },
          { "portrait",  OPTION_VAL_PORTRAIT_JA },
@@ -5743,6 +5767,7 @@ struct retro_core_option_v2_definition option_defs_ko[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_KO },
          { "landscape", OPTION_VAL_LANDSCAPE_KO },
          { "portrait",  OPTION_VAL_PORTRAIT_KO },
@@ -5978,6 +6003,7 @@ struct retro_core_option_v2_definition option_defs_nl[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_NL },
          { "landscape", OPTION_VAL_LANDSCAPE_NL },
          { "portrait",  OPTION_VAL_PORTRAIT_NL },
@@ -6213,6 +6239,7 @@ struct retro_core_option_v2_definition option_defs_no[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_NO },
          { "landscape", OPTION_VAL_LANDSCAPE_NO },
          { "portrait",  OPTION_VAL_PORTRAIT_NO },
@@ -6448,6 +6475,7 @@ struct retro_core_option_v2_definition option_defs_or[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_OR },
          { "landscape", OPTION_VAL_LANDSCAPE_OR },
          { "portrait",  OPTION_VAL_PORTRAIT_OR },
@@ -6683,6 +6711,7 @@ struct retro_core_option_v2_definition option_defs_pl[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_PL },
          { "landscape", OPTION_VAL_LANDSCAPE_PL },
          { "portrait",  OPTION_VAL_PORTRAIT_PL },
@@ -6918,6 +6947,7 @@ struct retro_core_option_v2_definition option_defs_pt_br[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_PT_BR },
          { "landscape", OPTION_VAL_LANDSCAPE_PT_BR },
          { "portrait",  OPTION_VAL_PORTRAIT_PT_BR },
@@ -7153,6 +7183,7 @@ struct retro_core_option_v2_definition option_defs_pt_pt[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_PT_PT },
          { "landscape", OPTION_VAL_LANDSCAPE_PT_PT },
          { "portrait",  OPTION_VAL_PORTRAIT_PT_PT },
@@ -7388,6 +7419,7 @@ struct retro_core_option_v2_definition option_defs_ru[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_RU },
          { "landscape", OPTION_VAL_LANDSCAPE_RU },
          { "portrait",  OPTION_VAL_PORTRAIT_RU },
@@ -7623,6 +7655,7 @@ struct retro_core_option_v2_definition option_defs_sk[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_SK },
          { "landscape", OPTION_VAL_LANDSCAPE_SK },
          { "portrait",  OPTION_VAL_PORTRAIT_SK },
@@ -7858,6 +7891,7 @@ struct retro_core_option_v2_definition option_defs_sr[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_SR },
          { "landscape", OPTION_VAL_LANDSCAPE_SR },
          { "portrait",  OPTION_VAL_PORTRAIT_SR },
@@ -8093,6 +8127,7 @@ struct retro_core_option_v2_definition option_defs_sv[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_SV },
          { "landscape", OPTION_VAL_LANDSCAPE_SV },
          { "portrait",  OPTION_VAL_PORTRAIT_SV },
@@ -8328,6 +8363,7 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_TR },
          { "landscape", OPTION_VAL_LANDSCAPE_TR },
          { "portrait",  OPTION_VAL_PORTRAIT_TR },
@@ -8563,6 +8599,7 @@ struct retro_core_option_v2_definition option_defs_uk[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_UK },
          { "landscape", OPTION_VAL_LANDSCAPE_UK },
          { "portrait",  OPTION_VAL_PORTRAIT_UK },
@@ -8798,6 +8835,7 @@ struct retro_core_option_v2_definition option_defs_val[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_VAL },
          { "landscape", OPTION_VAL_LANDSCAPE_VAL },
          { "portrait",  OPTION_VAL_PORTRAIT_VAL },
@@ -9033,6 +9071,7 @@ struct retro_core_option_v2_definition option_defs_vn[] = {
       NULL,
       NULL,
       {
+         { "auto", NULL },
          { "manual",    OPTION_VAL_MANUAL_VN },
          { "landscape", OPTION_VAL_LANDSCAPE_VN },
          { "portrait",  OPTION_VAL_PORTRAIT_VN },

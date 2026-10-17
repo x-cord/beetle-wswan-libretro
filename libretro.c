@@ -61,6 +61,7 @@ static bool libretro_supports_bitmasks = false;
 typedef enum
 {
    DISPLAY_ROTATION_MANUAL = 0,
+   DISPLAY_ROTATION_AUTO,
    DISPLAY_ROTATION_PORTRAIT,
    DISPLAY_ROTATION_LANDSCAPE
 } retro_display_rotation_t;
@@ -68,6 +69,8 @@ typedef enum
 static retro_display_rotation_t retro_display_rotation = DISPLAY_ROTATION_MANUAL;
 
 static bool rotate_tall               = false;
+static bool auto_rotate_tall          = false;
+static bool cartridge_rotate_tall     = false;
 static bool select_pressed_last_frame = false;
 static bool hw_rotate_enabled         = false;
 
@@ -541,10 +544,8 @@ static int Load(const uint8_t *data, size_t size)
       wsCartROM[0xfffec]=0x20;
    }
 
-#if 0
-   if(header[6] & 0x1)
-      EmulatedWSwan.rotated = MDFN_ROTATE90;
-#endif
+   cartridge_rotate_tall = (header[6] & 0x1) != 0;
+   auto_rotate_tall = cartridge_rotate_tall;
 
    MDFNMP_Init(16384, (1 << 20) / 1024);
 
@@ -715,7 +716,9 @@ static void check_variables(int startup)
 
    if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
    {
-      if (!strcmp(var.value, "portrait"))
+      if (!strcmp(var.value, "auto"))
+         retro_display_rotation = DISPLAY_ROTATION_AUTO;
+      else if (!strcmp(var.value, "portrait"))
          retro_display_rotation = DISPLAY_ROTATION_PORTRAIT;
       else if (!strcmp(var.value, "landscape"))
          retro_display_rotation = DISPLAY_ROTATION_LANDSCAPE;
@@ -902,6 +905,7 @@ void retro_init(void)
 
 void retro_reset(void)
 {
+   auto_rotate_tall = cartridge_rotate_tall;
    DoSimpleCommand(MDFN_MSC_RESET);
 }
 
@@ -1150,6 +1154,19 @@ void retro_run(void)
 
    if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE_UPDATE, &updated) && updated)
       check_variables(false);
+   /* Orientation icons override the cartridge default when exactly one is lit. */
+   switch (WSwan_GfxRead(0x15) & 0x06)
+   {
+      case 0x02: auto_rotate_tall = true; break;
+      case 0x04: auto_rotate_tall = false; break;
+   }
+   if (retro_display_rotation == DISPLAY_ROTATION_AUTO &&
+       rotate_tall != auto_rotate_tall)
+   {
+      rotate_tall = auto_rotate_tall;
+      rotate_display();
+   }
+
    update_sample_rate = update_audio;
 
    input_poll_cb();

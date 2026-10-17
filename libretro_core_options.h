@@ -59,10 +59,11 @@ struct retro_core_option_v2_definition option_defs_us[] = {
       "wswan_rotate_display",
       "Display Rotation",
       NULL,
-      "Choose the orientation of the console screen. 'Portrait' can be used to achieve the correct layout of portrait oriented games on a conventional (landscape) display. 'Manual' enables rotation via the controller (default button: SELECT).",
+      "Choose the orientation of the console screen. 'Auto' follows the game's orientation icons, using the cartridge orientation initially. 'Portrait' can be used to achieve the correct layout of portrait oriented games on a conventional (landscape) display. 'Manual' enables rotation via the controller (default button: SELECT).",
       NULL,
       NULL,
       {
+         { "auto",      "Auto" },
          { "manual",    "Manual" },
          { "landscape", "Landscape" },
          { "portrait",  "Portrait" },
